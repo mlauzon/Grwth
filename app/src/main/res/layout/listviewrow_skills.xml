@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100">
+
+    <ViewSwitcher
+        android:id="@+id/skillViewSwitcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="25">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:clickable="true"
+            android:text=""
+            android:id="@+id/txtSkillDescription"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:selectAllOnFocus="true"
+            android:hint="@string/enter_skill"
+            android:maxLines="1"
+            android:id="@+id/editSkillDescription"/>
+    </ViewSwitcher>
+
+    <ProgressBar
+        android:id="@+id/skillHorizontalProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:indeterminateOnly="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_weight="70"
+        />
+
+    <Button
+        android:layout_width="35.0dp"
+        android:layout_height="35.0dp"
+        android:layout_weight="5"
+        android:background="@drawable/delete"
+        android:id="@+id/btnDeleteSkill"/>
+</LinearLayout>

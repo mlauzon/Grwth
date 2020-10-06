@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100">
+
+    <ViewSwitcher
+        android:id="@+id/rewardViewSwitcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="95">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:clickable="true"
+            android:text=""
+            android:id="@+id/txtRewardDescription"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:selectAllOnFocus="true"
+            android:hint="Enter Reward..."
+            android:maxLines="1"
+            android:id="@+id/editRewardDescription"/>
+    </ViewSwitcher>
+
+    <Button
+        android:layout_width="35.0dp"
+        android:layout_height="35.0dp"
+        android:layout_weight="5"
+        android:background="@drawable/delete"
+        android:id="@+id/btnDeleteReward"/>
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100">
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/checkbox"/>
+
+    <ViewSwitcher
+        android:id="@+id/taskTxtSwitcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="97">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="@string/empty"
+            android:id="@+id/txtTaskDescription"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:selectAllOnFocus="true"
+            android:hint="@string/enter_task"
+            android:maxLines="1"
+            android:id="@+id/editTaskDescription"/>
+    </ViewSwitcher>
+
+    <Button
+        android:layout_width="20.0dp"
+        android:layout_height="20.0dp"
+        android:layout_weight="1"
+        android:background="@drawable/tag"
+        android:id="@+id/btnAddTag" />
+
+    <Button
+        android:layout_width="35.0dp"
+        android:layout_height="35.0dp"
+        android:layout_weight="1"
+        android:background="@drawable/delete"
+        android:id="@+id/btnDeleteTask"/>
+</LinearLayout>

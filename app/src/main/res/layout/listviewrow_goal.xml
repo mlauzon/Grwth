@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:weightSum="5"
+        android:orientation="horizontal">
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/spinnerGoalReward" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:hint="MM/DD/YY"
+            android:id="@+id/txtSetGoalDate" />
+        <Button
+            android:layout_width="20.0dp"
+            android:layout_height="20.0dp"
+            android:background="@drawable/tag"
+            android:id="@+id/btnChooseSkills" />
+
+        <Button
+            android:id="@+id/btnDeleteGoal"
+            android:layout_width="35.0dp"
+            android:layout_height="35.0dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/delete" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/textGoalStatus" />
+    </LinearLayout>
+</LinearLayout>
